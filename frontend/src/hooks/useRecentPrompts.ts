@@ -7,7 +7,7 @@ export interface IRecentPrompt {
 }
 
 const STORAGE_KEY = "story_spark_recent_prompts";
-const MAX_PROMPTS = 5;
+const MAX_PROMPTS = 20;
 
 export const useRecentPrompts = () => {
   const [recentPrompts, setRecentPrompts] = useState<IRecentPrompt[]>([]);
